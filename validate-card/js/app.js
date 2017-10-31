@@ -1,20 +1,36 @@
-var cardNumber = prompt("Escribe tu numero");
+var card = prompt("¿Cuál es el número de tu tarjeta?");
+var isValidCard = [];
 
-function isValidCard (cardNumber){
-  if(cardNumber.lenght !== 16){
-    return Error;
-  } else {
-  var inverseArr = [];
-  for (var i = 0; i <= 16; i ++) {
-       inverseArr.unshift(cardNumber[i]);{
-  }
-}return (inverseArr);
+for (var i = 1; i <= card.length; i ++) {
+  isValidCard.unshift(i);
 }
-}
- // Multiplicar por dos los digitos de los numeros que ocupan posiciones pares
-  var multiply = 0;
-  for(var i = 0; i <= 16; i++) {
-    if(i%2 === 0){
- console.log(i*2);
-}
-}
+
+var multiplyPosition = [];
+ for(var i = 1; i <= isValidCard.length; i++) {
+    if([i]%2 === 0) {
+    multiplyPosition.push([i]*2);
+
+    if (multiplyPosition >=10)
+    multiplyPosition = (multiplyPosition % 10) + (multiplyPosition/10);
+
+ var oddPosition = [];
+   for(var i = 1; i <= isValidCard.length; i++) {
+    if([i]%2 !== 0) {
+    oddPosition.push(i);
+
+var result = [];
+     result = oddPosition + multiplyPosition;
+    }
+    }
+ }
+ }
+ /* }if(result % 10 === 0){
+ console.log("Válida");
+} else {
+  console.log("inválida");
+}*/
+
+ console.log(result);
+
+
+//4213166063680734
