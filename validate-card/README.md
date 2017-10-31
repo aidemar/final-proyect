@@ -9,3 +9,6 @@ sino, se suman los dígitos.
 de las posiciones pares.
 6. Obtener el residuo de la division del resultado entre diez, si es igual a 0
 mostrar un alert de válido.
+
+#Diagrama de Flujo
+![tarjeta valida](file.jpeg)
